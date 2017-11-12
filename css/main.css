@@ -445,7 +445,6 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 .btn:hover{
   color: #ccc;
 }
-
 /* Labels */
 .label {
   display: inline;
@@ -709,6 +708,21 @@ Change widths as necessary
   .g2 {width:64.667%;}
   .g3 {width:98.0%}
 }
+
+.quote-author {
+  padding-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.quote-content-row {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+
 
 @media only screen and (min-width: 1280px) { 
   /* DESKTOP */
