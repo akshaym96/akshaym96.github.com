@@ -46,11 +46,4 @@ $(document).ready(function() {
     requestQuote();
   }
 
- 
-  /* ====== DEFAULT-START =====*/
-
-  $(".new-quote-btn").css("height"); // outerHeight includes height + padding
-
-
-
 });
