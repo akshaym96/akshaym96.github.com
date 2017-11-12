@@ -720,8 +720,23 @@ Change widths as necessary
   font-size: 25px;
 }
 
+.new-quote-btn {
+  font-weight: bold;
+  outline: none !important; // to remove unwanted border created around the button when clicked
+}
 
+.quote-section {
+  margin-top: 10%;
+}
 
+.quote-column {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19); /*paper shadow*/
+}
+
+.quote-rows {
+  padding: 35px 25px 35px 25px;
+}
 
 
 @media only screen and (min-width: 1280px) { 
