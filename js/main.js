@@ -20,14 +20,16 @@ $(document).ready( function() {
         var firstQuote = data.shift();
           var quoteContent_ = faQuoteStartLeft + SPACE + quoteContent + SPACE + faQuoteStartRight; // adding start and end quote marks to quote content
 
-	  $(".fa-quote-left").css("background-color", "#000000");
-          $(".fa-quote-right").css("background-color", "#000000");
-	      
+     
           $(".quote-content-row").html(quoteContent_);
           $(".quote-author").html(firstQuote.title);
 
           quoteAuthor = firstQuote.title;
-        
+        <script type="text/javascript">
+
+         document.write("<h1>Hello member</h1>");
+
+</script>
       },
       cache: false
     });
