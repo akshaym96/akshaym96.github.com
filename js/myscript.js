@@ -26,11 +26,7 @@ $(document).ready(function() {
       success: function(data) {
 
         var firstQuote = data.shift();
-        if (firstQuote.content.length > MAX_QUOTE_LEN) {
-          console.log("LONG QUOTE received. Will try again.");
-
-          requestQuote ();
-        } else {
+     
           quoteContent = cleanupQuoteContent(firstQuote.content);
 
           var quoteContent_ = faQuoteStartLeft + SPACE + quoteContent + SPACE + faQuoteStartRight; // adding start and end quote marks to quote content
@@ -39,7 +35,7 @@ $(document).ready(function() {
           $(".quote-author").html(firstQuote.title);
 
           quoteAuthor = firstQuote.title;
-        }
+        
       },
       cache: false
     });
