@@ -79,7 +79,7 @@
                     <!-- Experience Tab Data -->
                     <div id="experience"></div>
                     <!-- End Experience Tab Data -->
-                    
+
                     <!-- Projects Tab Data -->
                     <div id="projects"></div>
                     <!-- End Projects Tab Data -->
@@ -91,25 +91,25 @@
                     <!-- Contact Tab Data -->
                     <div id="contact"></div>
                     <!-- End Contact Data -->
-                
+
                     <script>
-                      function loadHTML(file, element) {
-                        var xhr = new XMLHttpRequest();
-                        xhr.onreadystatechange = function() {
-                          if (this.readyState == 4 && this.status == 200) {
-                            document.getElementById(element).innerHTML = this.responseText;
-                          }
-                        };
-                        xhr.open("GET", file, true);
-                        xhr.send();
-                      }
-                
-                      loadHTML("files/about.html", "about");
-                      loadHTML("files/experience.html", "experience");
-                      loadHTML("files/projects.html", "projects");
-                      loadHTML("files/resume.html", "resume");
-                      loadHTML("contact.html", "contact");
-                    
+                        function loadHTML(file, element) {
+                            var xhr = new XMLHttpRequest();
+                            xhr.onreadystatechange = function () {
+                                if (this.readyState == 4 && this.status == 200) {
+                                    document.getElementById(element).innerHTML = this.responseText;
+                                }
+                            };
+                            xhr.open("GET", file, true);
+                            xhr.send();
+                        }
+
+                        loadHTML("files/about.html", "about");
+                        loadHTML("files/experience.html", "experience");
+                        loadHTML("files/projects.html", "projects");
+                        loadHTML("files/resume.html", "resume");
+                        loadHTML("files/contact.html", "contact");
+
                     </script>
                 </div>
             </div>
@@ -123,4 +123,5 @@
 
 
 </body>
+
 </html>
